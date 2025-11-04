@@ -1,0 +1,42 @@
+.results-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #fff4f4;
+  box-sizing: border-box;
+}
+
+.results-card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 25px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.results-title {
+  font-family: "Yu Gothic-Bold", Helvetica;
+  font-size: 2rem;
+  color: #e5557f;
+  margin-bottom: 0.5rem;
+}
+
+.results-subtitle {
+  font-family: "Yu Gothic-Regular", Helvetica;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.results-description {
+  font-family: "Yu Gothic-Regular", Helvetica;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}

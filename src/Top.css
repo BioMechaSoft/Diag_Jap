@@ -1,0 +1,138 @@
+/* General Page Styles */
+.top-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* Header Section */
+.top-header {
+  position: relative;
+  width: 100%;
+  max-width: 750px; /* Corresponds to original design width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.top-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.top-logo {
+  width: 100%;
+  max-width: 486px;
+  height: auto;
+}
+
+.top-line {
+  width: 100%;
+  max-width: 492px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.top-subtitle {
+  width: 100%;
+  max-width: 347px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Main Content Section */
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px; /* Allow content to be wider */
+  background-color: #fff;
+  border-radius: 100px 100px 0 0;
+  margin-top: -50px; /* Pull up to overlap header slightly */
+  z-index: 1;
+}
+
+.top-description {
+  color: #000000;
+  font-family: "Yu Gothic-Regular", Helvetica;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+.top-cta-button {
+  border-radius: 50px !important;
+  padding: 1rem 2rem !important;
+  font-size: 1.2rem !important;
+  display: flex !important;
+  gap: 1rem !important;
+  background: linear-gradient(180deg, rgb(0, 194, 126) 0%, rgb(0, 208, 197) 100%) !important;
+}
+
+.top-cta-arrow {
+  width: 13px;
+  height: 20px;
+}
+
+.top-section-divider {
+  width: 100%;
+  max-width: 570px;
+  margin: 2rem 0;
+}
+
+.top-divider-line {
+  width: 100%;
+  height: 2px;
+}
+
+/* Treatments Grid */
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Individual Treatment Card Style */
+.treatment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.element-wrapper {
+  background-color: #fffdf4;
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element-9 {
+  width: 178px;
+  height: 202px;
+  object-fit: cover;
+}
+
+.text-wrapper-3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
