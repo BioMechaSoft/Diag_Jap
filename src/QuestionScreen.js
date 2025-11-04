@@ -1,4 +1,5 @@
 import { Button, Card } from "@mui/material";
+import VaccinesIcon from '@mui/icons-material/Vaccines';
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import x16 from "./assets/16タイプ@2x 1.png";
@@ -62,6 +63,9 @@ const QuestionScreen = () => {
   return (
     <main className="question-screen">
       <header className="qs-header">
+        <div className="qs-icon-container">
+          <VaccinesIcon className="qs-injection-icon" />
+        </div>
         <img className="qs-logo" src={image4} alt="Logo" />
         <img className="qs-subtitle" src={x16} alt="Subtitle" />
       </header>
