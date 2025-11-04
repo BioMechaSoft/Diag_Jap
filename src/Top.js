@@ -3,6 +3,9 @@ import React from "react";
 import { TreatmentCard } from "./TreatmentCard";
 import { useNavigate } from "react-router-dom";
 
+import useSound from 'use-sound';
+import buttonPressSound from './assets/buttonPress.mp3';
+
 // Asset Imports
 import x1 from "./assets/韓国漢方案 1.png";
 import x13 from "./assets/リベルサス案修正1 3.png";
@@ -21,6 +24,7 @@ const descriptionText = (
 
 export const Top = () => {
   const navigate = useNavigate();
+  const [play] = useSound(buttonPressSound);
 
   const treatments = [
     { title: "マンジャロ", buttonVariant: "text", description: descriptionText },
@@ -33,7 +37,7 @@ export const Top = () => {
     { title: "アカルボース", buttonEnabled: false, titleClassName: "text-wrapper-12", description: descriptionText },
     { image: x1, title: "韓国漢方", buttonVariant: "text", titleClassName: "text-wrapper-5", description: descriptionText },
     { title: "ダイエット点滴", titleClassName: "text-wrapper-8", description: descriptionText },
-    { image: x13, title: "脂肪溶解注射", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</> },
+    { image: x16, title: "脂肪溶解注射", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</> },
     { image: x13, title: "レーザー/ハイフ", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</> },
     { image: x13, title: "脂肪冷却", buttonEnabled: false, titleClassName: "text-wrapper-6", description: descriptionText },
     { image: x13, title: "EMS", buttonVariant: "text", titleClassName: "text-wrapper-6", description: descriptionText },
@@ -59,7 +63,10 @@ export const Top = () => {
           color="primary"
           size="large"
           variant="contained"
-          onClick={() => navigate("/questions")}
+          onClick={() => {
+            play();
+            navigate("/questions");
+          }}
         >
           今すぐ診断スタート
         </Button>

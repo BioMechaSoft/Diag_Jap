@@ -40,3 +40,25 @@
   margin-bottom: 2.5rem;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .results-screen {
+    padding: 1rem;
+  }
+
+  .results-card {
+    padding: 1.5rem;
+  }
+
+  .results-title {
+    font-size: 1.5rem;
+  }
+
+  .results-subtitle {
+    font-size: 1rem;
+  }
+
+  .results-description {
+    font-size: 0.9rem;
+  }
+}

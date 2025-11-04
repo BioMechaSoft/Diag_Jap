@@ -168,3 +168,53 @@
   gap: 1rem;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .question-screen {
+    padding: 1rem 0.5rem;
+  }
+
+  .qs-card {
+    padding: 1.5rem;
+    border-radius: 30px;
+  }
+
+  .qs-current-step {
+    font-size: 48px;
+  }
+
+  .qs-total-steps {
+    font-size: 24px;
+  }
+
+  .qs-question-container {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .qs-question-badge {
+    width: 60px;
+    height: 58px;
+    top: -15px;
+    left: -15px;
+  }
+
+  .qs-badge-text {
+    font-size: 24px;
+  }
+
+  .qs-question-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .qs-option-card {
+    min-height: auto;
+    padding: 0.8rem;
+  }
+
+  .qs-button-group {
+    flex-direction: column-reverse;
+  }
+}

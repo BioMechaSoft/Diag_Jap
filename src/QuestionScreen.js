@@ -2,6 +2,8 @@ import { Button, Card } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import x16 from "./assets/16タイプ@2x 1.png";
+import useSound from 'use-sound';
+import buttonPressSound from './assets/buttonPress.mp3';
 import image4 from "./assets/image 2.png";
 import "./QuestionScreen.css";
 
@@ -23,10 +25,12 @@ const QuestionScreen = () => {
   const [answers, setAnswers] = useState([]);
   const [selectedOption, setSelectedOption] = useState(null);
   const navigate = useNavigate();
+  const [play] = useSound(buttonPressSound);
 
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleNext = () => {
+    play();
     // Store the answer
     const newAnswers = [...answers];
     newAnswers[currentQuestionIndex] = selectedOption;
@@ -42,6 +46,7 @@ const QuestionScreen = () => {
   };
 
   const handleBack = () => {
+    play();
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
       // Restore previous selection for better UX
@@ -50,6 +55,7 @@ const QuestionScreen = () => {
   };
 
   const handleOptionSelect = (index) => {
+    play();
     setSelectedOption(index);
   };
 
