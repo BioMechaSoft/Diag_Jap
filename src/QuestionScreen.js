@@ -108,6 +108,7 @@ const QuestionScreen = () => {
 
         <div className="qs-button-group">
           <Button
+          className="top-cta-button"
             color="inherit"
             size="medium"
             variant="text"
