@@ -8,8 +8,9 @@ import buttonPressSound from './assets/buttonPress.mp3';
 
 // Asset Imports
 import x1 from "./assets/韓国漢方案 1.png";
+import x2 from "./assets/リベルサス案修正1 1.png";
+import x3 from "./assets/フォシーガ案 1.png";
 import x13 from "./assets/リベルサス案修正1 3.png";
-import x16 from "./assets/16タイプ@2x 1.png";
 import image4 from "./assets/image 2.png";
 
 const descriptionText = (
@@ -27,22 +28,22 @@ export const Top = () => {
   const [play] = useSound(buttonPressSound);
 
   const treatments = [
-    { title: "マンジャロ", buttonVariant: "text", description: descriptionText },
-    { title: "リベルサス", buttonEnabled: false, description: descriptionText },
-    { title: "フォシーガ", description: descriptionText },
-    { title: "ジャディアンス", buttonEnabled: false, titleClassName: "text-wrapper-6", description: descriptionText },
-    { title: "スーグラ", buttonVariant: "text", titleClassName: "text-wrapper-10", description: <>{descriptionText.props.children.slice(0, 4)}</> },
-    { title: "カナグル", buttonVariant: "text", titleClassName: "text-wrapper-14", description: descriptionText },
-    { title: "メトホルミン", titleClassName: "text-wrapper-8", description: descriptionText },
-    { title: "アカルボース", buttonEnabled: false, titleClassName: "text-wrapper-12", description: descriptionText },
-    { image: x1, title: "韓国漢方", buttonVariant: "text", titleClassName: "text-wrapper-5", description: descriptionText },
-    { title: "ダイエット点滴", titleClassName: "text-wrapper-8", description: descriptionText },
-    { image: x16, title: "脂肪溶解注射", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</> },
-    { image: x13, title: "レーザー/ハイフ", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</> },
-    { image: x13, title: "脂肪冷却", buttonEnabled: false, titleClassName: "text-wrapper-6", description: descriptionText },
-    { image: x13, title: "EMS", buttonVariant: "text", titleClassName: "text-wrapper-6", description: descriptionText },
-    { title: "オゼンピック", buttonEnabled: false, titleClassName: "text-wrapper-13", description: descriptionText },
-    { title: "ゼップバウンド", buttonEnabled: false, titleClassName: "text-wrapper-9", description: descriptionText },
+    { image: x3, title: "マンジャロ", buttonVariant: "text", description: descriptionText, buttonEnabled: true },
+    { image: x2, title: "リベルサス", buttonEnabled: false, description: descriptionText, buttonVariant: "text" },
+    { image: x3, title: "フォシーガ", description: descriptionText, buttonVariant: "text", buttonEnabled: true },
+    { image: x3, title: "ジャディアンス", buttonEnabled: false, titleClassName: "text-wrapper-6", description: descriptionText, buttonVariant: "text" },
+    { image: x3, title: "スーグラ", buttonVariant: "text", titleClassName: "text-wrapper-10", description: <>{descriptionText.props.children.slice(0, 4)}</>, buttonEnabled: true },
+    { image: x3, title: "カナグル", buttonVariant: "text", titleClassName: "text-wrapper-14", description: descriptionText, buttonEnabled: true },
+    { image: x3, title: "メトホルミン", titleClassName: "text-wrapper-8", description: descriptionText, buttonVariant: "text", buttonEnabled: true },
+    { image: x3, title: "アカルボース", buttonEnabled: false, titleClassName: "text-wrapper-12", description: descriptionText, buttonVariant: "text" },
+    { image: x1, title: "韓国漢方", buttonVariant: "text", titleClassName: "text-wrapper-5", description: descriptionText, buttonEnabled: true },
+    { image: x3, title: "ダイエット点滴", titleClassName: "text-wrapper-8", description: descriptionText, buttonVariant: "text", buttonEnabled: true },
+    { image: x2, title: "脂肪溶解注射", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</>, buttonEnabled: true },
+    { image: x13, title: "レーザー/ハイフ", buttonVariant: "text", titleClassName: "text-wrapper-6", description: <>{descriptionText.props.children.slice(0, 4)}</>, buttonEnabled: true },
+    { image: x13, title: "脂肪冷却", buttonEnabled: false, titleClassName: "text-wrapper-6", description: descriptionText, buttonVariant: "text" },
+    { image: x13, title: "EMS", buttonVariant: "text", titleClassName: "text-wrapper-6", description: descriptionText, buttonEnabled: true },
+    { image: x3, title: "オゼンピック", buttonEnabled: false, titleClassName: "text-wrapper-13", description: descriptionText, buttonVariant: "text" },
+    { image: x3, title: "ゼップバウンド", buttonEnabled: false, titleClassName: "text-wrapper-9", description: descriptionText, buttonVariant: "text" },
   ];
 
   return (

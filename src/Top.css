@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;770&display=swap');
+
 /* General Page Styles */
 .top-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: #FFFBF0; /* Creamy White */
   width: 100%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* Header Section */
@@ -58,8 +61,8 @@
   gap: 2rem;
   width: 100%;
   max-width: 1200px; /* Allow content to be wider */
-  background-color: #fff;
-  border-radius: 100px 100px 0 0;
+  background-color: #FFFBF0; /* Creamy White */
+  border-radius: 50px 50px 50px 50px; /* More rounded corners */
   margin-top: -50px; /* Pull up to overlap header slightly */
   z-index: 1;
 }
@@ -79,7 +82,8 @@
   font-size: 1.2rem !important;
   display: flex !important;
   gap: 1rem !important;
-  background: linear-gradient(180deg, rgb(0, 194, 126) 0%, rgb(0, 208, 197) 100%) !important;
+  background: #FADADD !important; /* Soft Pink */
+  color: #fff !important; /* White text for contrast */
 }
 
 .top-cta-arrow {
@@ -113,10 +117,20 @@
   align-items: center;
   gap: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: 0.3s;
+  border-radius: 15px; /* More rounded corners */
+  padding: 16px;
+  margin: 16px;
+  background-color: white;
+}
+
+.treatment-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .element-wrapper {
-  background-color: #fffdf4;
+  background-color: #F2FAEF; /* Pale Mint Green */
   border-radius: 10px;
   width: 280px;
   height: 280px;
